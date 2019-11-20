@@ -1,0 +1,34 @@
+{% include "layouts/base.njk" %}
+{% block content %}
+ <h1>Comédia Cubana</h1>
+{% include "partials/navbar.njk" %}
+<img id="trespatines" src="/assets/img/Caricatura-trespatines.jpg">
+<div class="btn-whatsapp">
+<a href="http://api.whatsapp.com/send?phone=+5521996430239" target="_blank">
+<img src="/assets/img/telefone.jpg" alt=""></a>
+</div>
+   <h2>Ghipy </h2>
+   
+    <div id="busqueda">
+     <article id="geral">
+    <input type="search">
+    <button>Pesquisar</button>
+     </article>
+    </div>
+   
+    
+    <div id="resultados">
+    <section id=progressbar>
+    </section>
+    </div>
+    <script src="script.js"></script>
+    
+
+{% include "partials/footer.njk"%}
+{% endblock %}
+
+
+
+
+
+

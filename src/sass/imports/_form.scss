@@ -1,0 +1,35 @@
+
+  form{
+    width:900px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background: rgb(172, 179, 204);
+    padding: 10px;
+    border-radius: 10px;
+}
+#boton:hover{
+    cursor:pointer;
+}
+/*para que sea responsivo*/
+@media (max-width:750px){
+    form{
+        width: 100%;
+    }
+} 
