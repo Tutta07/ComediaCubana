@@ -45,3 +45,6 @@ function copyJS() {
 
 
 exports.default = gulp.series(serve); 
+exports.copyJS=gulp.series(serve);
+exports.copyAssets=gulp.series(serve);
+exports.htmlTemplate=gulp.series(serve);
