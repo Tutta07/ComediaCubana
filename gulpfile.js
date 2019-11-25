@@ -5,7 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
 function serve() {
-    browserSync.init({
+   browserSync.init({
         server: {
             baseDir: "src/build"
         }
@@ -15,7 +15,11 @@ function serve() {
     gulp.watch(['src/sass/**/*.scss'], {ignoreInitial: false}, cssTranspile);
     gulp.watch(['src/*.js'], {ignoreInitial: false}, copyJS);
     gulp.watch(['src/assets/**/*'],{ignoreInitial:false},copyAssets);
+
    
+}
+function Build(){
+
 }
 
 function htmlTemplate() {
@@ -44,7 +48,7 @@ function copyJS() {
 }
 
 
+
 exports.default = gulp.series(serve); 
 exports.copyJS=gulp.series(serve);
 exports.copyAssets=gulp.series(serve);
-exports.htmlTemplate=gulp.series(serve);
